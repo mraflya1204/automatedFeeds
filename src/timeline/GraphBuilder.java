@@ -22,12 +22,11 @@ public class GraphBuilder {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split("\t");
-                if (parts.length == 3) {
+                if (parts.length == 2) {
                     int position = Integer.parseInt(parts[0]);
                     String content = parts[1];
-                    int likes = Integer.parseInt(parts[2]);
 
-                    nodes node = new nodes(position, content, likes);
+                    nodes node = new nodes(position, content);
                     graph.put(position, node);
                 }
             }
