@@ -6,10 +6,9 @@ public class nodes {
 	String content;
     int likes;
 
-    nodes(int position, String content, int likes) {
+    nodes(int position, String content) {
     	this.position = position;
         this.content = content;
-        this.likes = likes;
         this.likes = getRandomValue(1, 1000);
     }
 
