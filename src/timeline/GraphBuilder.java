@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
+
 public class GraphBuilder {
     private Map<Integer, nodes> graph;
     private Map<Integer, Set<Integer>> edges;
@@ -64,7 +65,7 @@ public class GraphBuilder {
 
     private double calculateEdgeWeight(nodes node1, nodes node2) {
         double similarity = calculateStringSimilarity(node1.content, node2.content);
-        return (1 - similarity) + (100/node2.likes);
+        return 2*(1 - similarity) + (1-(0.1 + ((node2.likes - 1) * (1 - 0.1) / (1000 - 1)))); 
     }
 
     private double calculateStringSimilarity(String s1, String s2) {
