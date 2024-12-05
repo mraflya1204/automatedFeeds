@@ -1,7 +1,6 @@
 # Automated Feeds
 ## Shortly introduce the problem and how graph theory is implemented
 In the evolving landscape of social media, user engagement is crucial to platform success. This proposal explores the application of graph-based algorithms to optimize social media timelines, with the goal of enhancing user satisfaction by presenting relevant, tailored content. By displaying posts that share thematic or content-based similarities, users will encounter a more curated experience, likely improving their comfort and engagement with the platform. We're implementing the graph usage for this project. In this project, we're implementing Kruskal's method.
-## Provide instruction how to run, and give sample input and output. 
 ![image](https://github.com/user-attachments/assets/cf74caf8-3a81-40b8-8790-3de8011dc8b9)
 1. Start
 The process begins here.
@@ -25,6 +24,8 @@ A kruskal() function is used to compute the Minimum Spanning Tree (MST), optimiz
 The optimized path obtained from Kruskal’s algorithm is displayed, showing the specific connections chosen in the MST.
 10. Display Timeline
 Finally, the system displays the user’s optimized timeline, which represents the sequence of events or feeds based on the selected path.
+## Instruction how to run, and sample input and output. 
+Example:
 
 ## Shortly summarize result and its analysis
 
