@@ -29,7 +29,14 @@ The optimized path obtained from Kruskal’s algorithm is displayed, showing the
 10. Display Timeline
 Finally, the system displays the user’s optimized timeline, which represents the sequence of events or feeds based on the selected path.
 ## Instruction how to run, and sample input and output. 
-Example:
+When you run the program, it will ask you to input some several options, whether to terminate the process, view the feeds, or tweet something.
+
+![image](https://github.com/user-attachments/assets/fcee81a7-33dd-4ff9-bcba-d0c531c99042)
+
+If the user inputs the number 1, the system will output "Operation aborted," indicating that the process has been terminated.
+
+![image](https://github.com/user-attachments/assets/df239406-a3cc-49c4-a923-3c108f5d7f4b)
+
 
 ## Shortly summarize result and its analysis
 
