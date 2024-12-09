@@ -40,7 +40,11 @@ If the user inputs the number 1, the system will output "Operation aborted," ind
 
 ## Shortly summarize result and its analysis
 
-### View Feed Output:
+### Summary Result :
+
+![WhatsApp Image 2024-12-09 at 17 21 50_1ec9cdc1](https://github.com/user-attachments/assets/f9ef2b11-4834-4171-b9a0-f8eb2b202d16)
+
+### Analysis:
 
 First run
 
@@ -97,8 +101,3 @@ The total MST cost in the first run is 17.02, in the second run it's 16.97, and 
     }
 ```
 
-### Add feeds Output:
-
-![image](https://github.com/user-attachments/assets/77d78d47-89e9-4e7c-ad11-0dbd6cdc3eed)
-
-We are adding the `Keren puol` to the feeds
