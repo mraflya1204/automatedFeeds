@@ -70,6 +70,33 @@ After all the edges are displayed, the total MST cost is shown at the end of eac
 
 The total MST cost in the first run is 17.02, in the second run it's 16.97, and in the third run it's 18.59. The Minimum Spanning Tree (MST) changes between runs despite not adding any feeds is caused by the edges are added in  `addEdges()` functions
 
+```
+    public void addEdges() {
+        Random random = new Random();
+        int nodeCount = graph.size();
+
+        for (int i = 0; i < nodeCount; i++) {
+            if (!graph.containsKey(i)) {
+                continue;
+            }
+
+            Set<Integer> neighbors = edges.computeIfAbsent(i, k -> new HashSet<>());
+
+            while (neighbors.size() < 2) {
+                int j = random.nextInt(nodeCount);
+                if (j != i && graph.containsKey(j) && !neighbors.contains(j)) {
+                    neighbors.add(j);
+                    edges.computeIfAbsent(j, k -> new HashSet<>()).add(i);
+
+                    double weight = calculateEdgeWeight(graph.get(i), graph.get(j));
+                    weights.put(new Pairs<>(i, j), weight);
+                    weights.put(new Pairs<>(j, i), weight);
+                }
+            }
+        }
+    }
+```
+
 ### Add feeds Output:
 
 ![image](https://github.com/user-attachments/assets/77d78d47-89e9-4e7c-ad11-0dbd6cdc3eed)
