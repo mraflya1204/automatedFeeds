@@ -29,6 +29,11 @@ The optimized path obtained from Kruskal’s algorithm is displayed, showing the
 10. Display Timeline
 Finally, the system displays the user’s optimized timeline, which represents the sequence of events or feeds based on the selected path.
 ## Instruction how to run, and sample input and output. 
+
+Open the project (this repo) in a Java-compatible IDE.
+
+Open graphExec Class, and run it.
+
 When you run the program, it will ask you to input some several options, whether to terminate the process, view the feeds, or tweet something.
 
 ![image](https://github.com/user-attachments/assets/fcee81a7-33dd-4ff9-bcba-d0c531c99042)
@@ -37,6 +42,11 @@ If the user inputs the number 1, the system will output "Operation aborted," ind
 
 ![image](https://github.com/user-attachments/assets/df239406-a3cc-49c4-a923-3c108f5d7f4b)
 
+If 3 is chosen, you will be prompted to enter a String, which will then be added to the database. It will then be shown as the first feed in the timeline.
+
+![image](https://github.com/user-attachments/assets/5ae7cc45-2afc-46e5-bd5b-adac8d90bdd1)
+
+If 2 is chosen, it will simply output the timeline, much like option 3 but without entering a new feed.
 
 ## Shortly summarize result and its analysis
 
